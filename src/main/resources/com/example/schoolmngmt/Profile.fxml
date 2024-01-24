@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.schoolmngmt.ProfileController">
+   <top>
+      <Pane prefHeight="122.0" prefWidth="200.0" style="-fx-background-color: #162938;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="158.0" layoutY="16.0" text="Profile" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="69.0" text="Teaching Management System" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="112.0" layoutY="74.0" size="47" />
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <VBox prefHeight="524.0" prefWidth="262.0" style="-fx-background-color: #162938;" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="35.0" prefWidth="127.0" text="Welcome " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="userNamelabel" prefHeight="27.0" prefWidth="178.0" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="3.0" />
+               </VBox.margin>
+            </Label>
+            <VBox prefHeight="432.0" prefWidth="262.0" spacing="5.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="250.0">
+                     <children>
+                        <Button fx:id="btnHome" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <Label layoutX="61.0" text="Home" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="HOME" layoutX="14.0" layoutY="24.0" size="30" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnClasses" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <Label layoutX="61.0" text="Classes" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="BUILDING" layoutX="18.0" layoutY="22.0" size="30" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btn_Timetable" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <Label layoutX="61.0" text="Timetable" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="CALENDAR_CHECK_ALT" layoutX="16.0" layoutY="22.0" size="30" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnStudent" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <Label layoutX="61.0" text="Students" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="CHILD" layoutX="20.0" layoutY="22.0" size="30" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnGrading" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <Label layoutX="61.0" text="Student Grading" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="GROUP" layoutX="13.0" layoutY="22.0" size="30" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: #ffffff;">
+                     <children>
+                        <Button fx:id="btnProfile" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="18.0" layoutY="24.0" size="30" wrappingWidth="21.057125091552734" />
+                                    <Label layoutX="61.0" text="Profile" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="45.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="btnSignOut" mnemonicParsing="false" onAction="#handleOnclick" prefHeight="40.0" prefWidth="262.0" style="-fx-background-color: #162938;" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                           <graphic>
+                              <Pane prefHeight="27.0" prefWidth="131.0">
+                                 <children>
+                                    <Label layoutX="61.0" text="Sign Out" textFill="WHITE">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="POWER_OFF" layoutX="18.0" layoutY="24.0" size="30" />
+                                 </children>
+                              </Pane>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="58.0" prefWidth="810.0" text="Profile Details">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" top="25.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="60.0" prefWidth="759.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="74.0" text="First Name :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="displayFName" prefHeight="20.0" prefWidth="292.0" text="Label">
+                     <HBox.margin>
+                        <Insets left="10.0" top="17.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="74.0" text="Last Name :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="displayLName" prefHeight="20.0" prefWidth="292.0" text="Label">
+                     <HBox.margin>
+                        <Insets left="10.0" top="17.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="74.0" text="Username :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="displayEmail" prefHeight="20.0" prefWidth="292.0" text="Label">
+                     <HBox.margin>
+                        <Insets left="10.0" top="17.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="60.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="74.0" text="Password :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="displayPassword" prefHeight="20.0" prefWidth="292.0" text="Label">
+                     <HBox.margin>
+                        <Insets left="10.0" top="17.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="419.0" prefHeight="60.0" prefWidth="810.0">
+               <children>
+                  <Label prefHeight="51.0" prefWidth="74.0" text="Phone No :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="displayPNum" prefHeight="20.0" prefWidth="292.0" text="Label">
+                     <HBox.margin>
+                        <Insets left="10.0" top="17.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btneditProfile" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#onClickEditButton" style="-fx-background-radius: 30;" text="Edit Profile">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets left="50.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
