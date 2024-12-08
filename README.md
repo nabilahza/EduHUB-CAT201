@@ -14,14 +14,17 @@ System requirements for each modules:
    -User login
    -Account registration
    -Update user profile
+   
 **2. Class Management:**
    -Update classes details
    -View classes table
    -Update subject details
    -View subject table
+   
 **3. Timetable Management:**
    -Update timetable details
    -View timetable
+   
 **4. Student Management:** 
    -Update student details
    -View student table
